@@ -4,10 +4,7 @@ import type { Frontmatter } from '../config'
 import { SiteMetadata } from '../config'
 import Base from '../layouts/base.astro'
 import Hero from '../components/hero.astro'
-import Features from '../components/features.astro'
-import FindOutMore from '../components/findoutmore.astro'
 import LatestArticles from '../components/latestarticles.astro'
-import CTA from '../components/cta.astro'
 import coverSVG from '../assets/svg/undraw/undraw_design_inspiration.svg'
 import socialImage from '../assets/undraw/undraw_design_inspiration.png'
 
@@ -27,9 +24,6 @@ const latestPosts = posts.sort((a, b) => +b.data.publishDate - +a.data.publishDa
 
 <Base frontmatter={frontmatter}>
   <Hero />
-  <Features />
-  <FindOutMore />
   <LatestArticles posts={latestPosts} />
-  <CTA />
   <div class="bg-white p-24 dark:bg-black md:p-12"></div>
 </Base>

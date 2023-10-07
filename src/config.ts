@@ -40,9 +40,9 @@ export { default as DefaultImage } from './assets/undraw/undraw_my_feed.png'
 
 export const NavigationLinks = [
   { name: 'Home', href: '' },
-  { name: 'About', href: 'about' },
-  { name: 'Contact', href: 'contact' },
+  // { name: 'About', href: 'about' },
   { name: 'Blog', href: 'blog' },
+  { name: 'Contact', href: 'contact' },
 ]
 
 export const PAGE_SIZE = 6
