@@ -22,18 +22,18 @@ const blogCollection = defineCollection({
     })
 })
 
-const docCollection = defineCollection({
-  schema: ({ image }) =>
-    z.object({
-      draft: z.boolean().optional(),
-      section: z.string(),
-      weight: z.number().default(0),
-      title: z.string(),
-      description: z.string(),
-      images: z.array(image()).optional(),
-      gallery: z.string().optional()
-    })
-})
+// const docCollection = defineCollection({
+//   schema: ({ image }) =>
+//     z.object({
+//       draft: z.boolean().optional(),
+//       section: z.string(),
+//       weight: z.number().default(0),
+//       title: z.string(),
+//       description: z.string(),
+//       images: z.array(image()).optional(),
+//       gallery: z.string().optional()
+//     })
+// })
 
 const categoryCollection = defineCollection({
   schema: ({ image }) =>
@@ -67,7 +67,7 @@ const socialCollection = defineCollection({
 // 3. Export multiple collections to register them
 export const collections = {
   blog: blogCollection,
-  doc: docCollection,
+  // doc: docCollection,
   category: categoryCollection,
   author: authorCollection,
   social: socialCollection
